@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>final.proposal</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lacquer&family=Libre+Barcode+39+Extended+Text&family=Oswald:wght@700&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple" />
+
+        <style>
+            .libre-barcode-39-extended-text-regular {
+                font-family: "Libre Barcode 39 Extended Text", system-ui;
+                font-weight: 400;
+                font-style: normal;
+            }
+            h1 {
+                font-family: "Libre Barcode 39 Extended Text", system-ui;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 80px;
+                display: inline-block;
+                margin: 40px;
+            }
+
+            #options {
+                font-family: "arial";
+                font-size: 50px;
+                display: inline-block;
+                margin: 40px;
+            }
+            h2 {
+                font-family: "arial";
+                font-size: 50px;
+                display: inline-block;
+                margin: 40px;
+            }
+            h3 {
+                font-family: "arial";
+                font-size: 50px;
+                display: inline-block;
+                margin: 40px;
+            }
+            h4 {
+                font-family: "arial";
+                font-size: 50px;
+                display: inline-block;
+                margin: 40px;
+            }
+            #me {
+                width: 227px;
+                height: 635px;
+                position: absolute;
+                left: 1183px;
+                top: 100px;
+            }
+            #sigil {
+                position: absolute;
+                left: 1183px;
+                top: 0px;
+            }
+
+            #channel:hover h2 {
+                color: #f66f90;
+            }
+            #Antecedent:hover h3 {
+                color: #aebe61;
+            }
+            #Intention:hover h4 {
+                color: #3783b6;
+            }
+            #channelex {
+                position: absolute;
+                right: 493px;
+                top: 225px;
+                width: 435px;
+                height: 359px;
+                font-size: 37px;
+                display: none;
+            }
+            #Antecedentex {
+                position: absolute;
+                right: 493px;
+                top: 150px;
+                width: 435px;
+                height: 359px;
+                font-size: 37px;
+                display: none;
+            }
+            #Intentionex {
+                position: absolute;
+                right: 493px;
+                top: 225px;
+                width: 435px;
+                height: 359px;
+                font-size: 37px;
+                display: none;
+            }#link1{
+                font-family: "Libre Barcode 39 Extended Text", system-ui;
+                color: #000000;
+                font-size: 30px;
+                 font-weight: 400;
+                padding: 12px 24px;
+                border-radius: 90px;
+                background-color: #7d8b56;
+                text-decoration: none;
+                display: inline-block;
+                margin: 40px;
+                font-family: "Audiowide", sans-serif;
+                box-shadow: 0 0 5px 5px #7d8b56;
+                transition: box-shadow 0.5s ease-in-out;
+            }
+                #link1:hover {
+                box-shadow: 0 0 20px 20px #7d8b56;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Cyber Sigilism</h1>
+        <section id="options">
+            <div id="channel">
+                <h2>Channel</h2>
+            </div>
+            <div id="Antecedent">
+                <h3>Antecedent</h3>
+            </div>
+            <div id="Intention">
+                <h4>Intention</h4>
+            </div>
+        </section>
+
+        <section id="words">
+            <div id="channelex">
+                <p>
+                    My final project ‘Cyber Sigilism’ is an interactive web-based program. Thought of as meta
+                    exploration of coding to create an vector based language system
+                </p>
+            </div>
+            <div id="Antecedentex">
+                <p>
+                    My interest in cognitive psychology inspired this project, specifically the 'imagery debate' which
+                    questions whether mental images are representative of perception or language.
+                </p>
+                <p>Cyber sigilism is tattoo style that takes a modern look a tribal designs.</p>
+            </div>
+            <div id="Intentionex">
+                <p>
+                    The goal of my project is for audiences to reconsider how they view language and words. To
+                    understand the power of symbolism, and the way we imbue elements with meaning.
+                </p>
+            </div>
+                        <a href="finalproject0.html" target="_blank" id="link1"> See it </a>
+
+        </section>
+
+        <script>
+            document.getElementById("channel").addEventListener("click", function () {
+                const channelex = document.getElementById("channelex");
+                if (channelex.style.display === "none" || channelex.style.display === "") {
+                    channelex.style.display = "block";
+                } else {
+                    channelex.style.display = "none";
+                }
+            });
+            document.getElementById("Antecedent").addEventListener("click", function () {
+                const Antecedentex = document.getElementById("Antecedentex");
+                if (Antecedentex.style.display === "none" || Antecedentex.style.display === "") {
+                    Antecedentex.style.display = "block";
+                } else {
+                    Antecedentex.style.display = "none";
+                }
+            });
+            document.getElementById("Intention").addEventListener("click", function () {
+                const Intentionex = document.getElementById("Intentionex");
+                if (Intentionex.style.display === "none" || Intentionex.style.display === "") {
+                    Intentionex.style.display = "block";
+                } else {
+                    Intentionex.style.display = "none";
+                }
+            });
+        </script>
+        <section id="images">
+            <img id="me" src="images/mestanding.png" />
+            <img id="sigil" src="images/Vector.png" />
+        </section>
+    </body>
+</html>
